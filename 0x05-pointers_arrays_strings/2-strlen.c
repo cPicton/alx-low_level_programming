@@ -8,7 +8,13 @@
 
 int _strlen(char *s)
 {
-const char *s
-for (s = str; *s; ++s);
-return(s - str);
+  int x;
+
+x = 0;
+while (*s != '\0')
+{
+x++;
+s++;
+}
+return (x);
 }

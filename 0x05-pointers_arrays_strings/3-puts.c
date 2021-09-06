@@ -1,9 +1,9 @@
-#include "main.h"
+#include "holberton.h"
 /**
- *_puts - prints string followed by newline.
- *@str: pointer to string.
+ * _puts - prints string followed by newline
+ * @str: pointer to string.
  *
- *Return: void.
+ * Return: void
  */
 void _puts(char *str)
 {

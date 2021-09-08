@@ -1,25 +1,20 @@
 #include "main.h"
-
-
 /**
- * main - check the code for ALX School students.
- *
- * Program that prints Holberton, followed by a new line
- *
- * Return: always 0 (success)
+ * main - main block
+ * Description: Print a word using _putchar
+ * Return: 0
  */
-
 int main(void)
 {
-char s[] = "_putchar";
+char a[8] = "_putchar";
 int i = 0;
 
-while (s[i] != '\0')
+while (i < 8)
 {
-_putchar(s[i]);
+_putchar(a[i]);
 i++;
 }
-_putchar(10);
 
+_putchar('\n');
 return (0);
 }

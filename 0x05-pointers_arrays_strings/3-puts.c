@@ -1,13 +1,12 @@
-nclude "main.h"
-#include <stdio.h>
+include "main.h"
 
 /**
-*  * _puts - Print a string followed by a newline to stdout
-*   *
-*    * @str: Pointer to use
-*     *
-*      * Return: void
-*       */
+* _puts - Print a string followed by a newline to stdout
+*
+* @str: Pointer to use
+*
+*  Return: void
+*/
 
 void _puts(char *str)
 {

@@ -1,29 +1,42 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * cap_string - capitalizes first letter of every word
- * @s: string in question
- *
- * Return: new string
- */
-char *cap_string(char *s)
+* cap_string - capitalize all words of a string
+* @n: input value
+* Return: string
+*/
+
+char *cap_string(char *n)
 {
 int i;
 
 i = 0;
-
-while (*(s + i) != '\0')
+if (n[0] >= 'a' && n[0] <= 'z')
 {
-if (*(s + 0) >= 'a' && *(s + 0) <= 'z')
+n[0] = n[0] - 32;
+}
+for (i = 0; n[i] != '\0'; i++)
 {
-*(s + 0) = *(s + 0) - 32;
-}
-if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == ',' || s[i] == ';' || s[i] == '.'|| s[i] == '!' || s[i] == '?' || s[i] == '\"' || s[i] == '(' || s[i] == ')' || s[i] == '{' || s[i] == '}')
+switch (n[i])
 {
-if (*(s + i + 1) >= 'a' && *(s + i + 1) <= 'z')
-*(s + i + 1) = *(s + i + 1) - 32;
+case ',':
+case ';':
+case '.':
+case '!':
+case '?':
+case '"':
+case '(':
+case ')':
+case '{':
+case '}':
+case ' ':
+case '\n':
+case '\t':
+if (n[i + 1] > 96 && n[i + 1] < 123)
+{
+n[i + 1] = n[i + 1] - 32;
 }
-i++;
 }
-return (s);
+}
+return (n);
 }

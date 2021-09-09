@@ -7,14 +7,13 @@
 */
 void _puts(char *str)
 {
-int i;
-
-i = 0;
-while (*str != '\0')
+int y = 0;
+while (strc[y])
 {
-_putchar(*str);
-i++;
-str++;
+putchar(strc[y]);
+y++
 }
-_putchar('\n');
+putchar ('\n');
 }
+}
+

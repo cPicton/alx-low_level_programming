@@ -5,17 +5,19 @@
  * Return: the converted string.
  */
 
-char *string_toupper(char *)
-
+char *string_toupper(char *x)
 {
-int i;
+int abc;
 
-i = 0;
-while (c[i] != '\0')
+abc = 0;
+
+while (x[abc] != '\0')
 {
-if (c[i] >= 'a' && c[i] <= 'z')
-c[i] -= 'a' - 'A';
-i++;
+if (x[abc] >= 97 && x[abc] <= 122)
+{
+x[abc] = x[abc] - 32;
+		}
+abc++;
 }
-return (c);
+return (x);
 }

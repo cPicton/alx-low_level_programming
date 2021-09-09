@@ -12,11 +12,8 @@ int abc;
 abc = 0;
 
 while (x[abc] != '\0')
-
 {
-
 if (x[abc] >= 'a' && x[abc] <= 'z')
-
 x[abc] = x[abc] - 32;
 
 abc++;

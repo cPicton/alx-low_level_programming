@@ -11,10 +11,10 @@
 
 int _strlen(char *s)
 {
-int x = 0
+int x = 0;
 while (s[x])
 {
-x++
+x++;
 }
-return  (0)
+return  (x);
 }

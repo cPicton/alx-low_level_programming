@@ -16,7 +16,7 @@ while (x[abc] != '\0')
 if (x[abc] >= 97 && x[abc] <= 122)
 {
 x[abc] = x[abc] - 32;
-		}
+}
 abc++;
 }
 return (x);

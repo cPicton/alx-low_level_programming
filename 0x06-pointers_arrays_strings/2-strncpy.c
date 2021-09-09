@@ -3,7 +3,7 @@
 /**
 * _strncpy - Copies a string
 *
-*  @dest: Destination to copy to
+* @dest: Destination to copy to
 *
 * @src: Source to copy from
 *

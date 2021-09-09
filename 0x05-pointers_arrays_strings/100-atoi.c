@@ -8,33 +8,29 @@
  */
 int _atoi(char *s)
 {
-int index, ind2;
-unsigned int res;
-int sign = 1;
-char now;
+int i;
+int h, p;
 
-index = 0;
-res = 0;
-while (*(s + index) != '\0')
+h = 0;
+p = -1;
+for (i = 0; s[i] != '\0'; i++)
 {
-now = *(s + index);
-if (now == '-')
+if (s[i] == '-')
+p *= -1;
+
+if (s[i] > 47 && s[i] < 58)
 {
-sign *= -1;
-}
-if (now >= '0' && now <= '9')
-{
-ind2 = index;
-while (*(s + ind2) > 47 && *(s + ind2) < 58)
-{
-res = (res * 10) + *(s + ind2) -'0';
-ind2++;
-}
+if (h < 0)
+h = (h * 10) - (s[i] - '0');
+else
+h = (s[i] - '0') * -1;
+
+if (s[i + 1] < 48 || s[i + 1] > 57)
 break;
 }
-index++;
 }
-if (sign < 0)
-res *= sign;
-return (res);
+if (p < 0)
+h *= -1;
+
+return (h);
 }

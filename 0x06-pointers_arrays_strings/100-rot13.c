@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-*  * rot13 - encodes a string
-*   *Return: string
-*    */
+* rot13 - encodes a string
+* Return: string
+*/
 
 char *rot13(char *y)
 {

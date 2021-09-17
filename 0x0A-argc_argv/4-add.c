@@ -1,57 +1,33 @@
-#include <stdio.h> 
-#include <stdlib.h> 
-#include <stdbool.h> 
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 
 /**
-* is_num - iterate through each argv to test if it's a number
-* @argvv: a argv
-* Return: true only if entire string is a number, false if not
+* main - adds numbers
+* @argc: number of arguments passed to the function
+* @argv: argument vector of pointers to strings
+*
+* Return: 0 if no errors, else 1
 */
-
-bool is_num(char *argvv)
-{
-int j = 0;
-
-for (j = 0; argvv[j]; j++)
-{
-if (!(argvv[j] >= '0' && argvv[j] <= '9'))
-return (0);
-}
-return (1);
-}
-
-/**
-* main - print sum if all arguments given are numbers
-* @argc: argument counter
-* @argv: arguments
-* Return: 0 on success, 1 if an argument wasn't a number
-*/
-
 int main(int argc, char *argv[])
 {
-int i = 1;
-int sum = 0;
+int a = 0, i, j;
 
-
-if (argc == 1)
+for (i = 1; i < argc; i++)
 {
-printf("0\n");
-return (0);
-}
-
-
-while (i < argc)
+for (j = 0; argv[i][j]; j++)
 {
-if (is_num(argv[i]))
-sum += atoi(argv[i]);
-else
+if (isdigit(argv[i][j]) == 0)
 {
-printf("Error\n");
+puts("Error");
 return (1);
 }
-i++;
 }
-printf("%d\n", sum);
-
+}
+for (i = 1; i < argc; i++)
+{
+a += atoi(argv[i]);
+}
+printf("%d\n", a);
 return (0);
 }

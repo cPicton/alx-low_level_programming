@@ -1,23 +1,17 @@
 #include <stdio.h>
 #include "main.h"
+/**
+* main - print number of arguments passed to program
+* @argc: argument counter
+* @argv: pointer to array of arguments
+* Return: 0 on success
+*/
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-int count;
+if (argc > 0)
+printf("%d\n", argc - 1);
 
-printf ("This program was called with \"%s\".\n",argv[0]);
-
-if (argc > 1)
-{
-for (count = 1; count < argc; count++)
-{
-  printf("argv[%d] = %s\n", count, argv[count]);
-	}
+return (0);
 }
-else
-{
-printf("The command had no other arguments.\n");
-}
-
-return 0;
 }

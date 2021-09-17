@@ -14,4 +14,3 @@ printf("%d\n", argc - 1);
 
 return (0);
 }
-}

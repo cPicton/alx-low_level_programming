@@ -21,7 +21,7 @@ arr = malloc(sizeof(char) * size);
 if (arr == NULL)
 return (NULL);
 
-while (size < (int)size)
+while (i < (int)size)
 {
 *(arr + i) = c;
 i++;

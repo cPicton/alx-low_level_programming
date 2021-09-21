@@ -23,11 +23,11 @@ while (*(s1 + x))
 len1++, x++;
 while (*(s2 + y))
 len2++, y++;
-len2++; 
+len2++;
 
 concat = malloc(sizeof(char) * (len1 + len2));
 
-if (concat == NULL) 
+if (concat == NULL)
 return (NULL);
 
 x = 0, y = 0;

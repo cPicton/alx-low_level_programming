@@ -1,63 +1,76 @@
-#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
-
 /**
-* wordnos - counts number of words in a given string.
-* @str: pointer to string.
+* wordnos - counts no of words in a given string
+* @s: pointer to the string
 *
-* Return: number of words in the string.
-* type - int.
+* Return: No. of words in the string (int)
 */
-int wordnos(char *str)
+int wordnos(char *s)
 {
-int word_no, i, j;
+int flag, c, w;
 
-word_no = 0;
-i = 0;
-while (*(str + i) != '\0')
+flag = 0;
+w = 0;
+
+for (c = 0; s[c] != '\0'; c++)
 {
-if (*(str + i) != 32 && *(str + i) != '\0')
+if (s[c] == ' ')
+flag = 0;
+else if (flag == 0)
 {
-j = i;
-while (*(str + j) != 32 && *(str + j) != '\0')
-j++;
-word_no++;
-i = j - 1;
+flag = 1;
+w++;
 }
-i++;
-}
-return (word_no);
 }
 
+return (w);
+}
 /**
-* cpystr - copies words in string to 2D array of strings.
-* @s: double pointer to a 2D array of strings.
-* @str: pointer to string whose words are to be copied.
+* **strtow - splits a string into words
+* @str: string to split
 *
-* Return: void.
+* Return: pointer to an array of strings (Success)
+* or NULL (Error)
 */
-void cpystr(char **s, char *str)
+char **strtow(char *str)
 {
-int i, j, k, idx;
+char **matrix, *tmp;
+int i, k = 0, len = 0, words, c = 0, start, end;
 
-i = 0;
-idx = 0;
-while (*(str + i) != '\0')
+while (*(str + len))
+len++;
+words = wordnos(str);
+if (words == 0)
+return (NULL);
+
+matrix = (char **) malloc(sizeof(char *) * (words + 1));
+if (matrix == NULL)
+return (NULL);
+
+for (i = 0; i <= len; i++)
 {
-if (*(str + i) != 32 && *(str + i) != '\0')
+if (str[i] == ' ' || str[i] == '\0')
 {
-j = i;
-k = 0;
-while (*(str + j) != 32 && *(str + j) != '\0')
+if (c)
 {
-s[idx][k] = *(str + j);
+end = i;
+tmp = (char *) malloc(sizeof(char) * (c + 1));
+if (tmp == NULL)
+return (NULL);
+while (start < end)
+*tmp++ = str[start++];
+*tmp = '\0';
+matrix[k] = tmp - c;
 k++;
-j++;
+c = 0;
 }
-s[idx][k] = '\0';
-idx++;
-i = j;
 }
-i++;
+else if (c++ == 0)
+start = i;
 }
+
+matrix[k] = NULL;
+
+return (matrix);
 }

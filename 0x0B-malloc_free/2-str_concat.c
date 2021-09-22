@@ -37,8 +37,9 @@ a++;
 }
 while (b < len2)
 {
-neow[a] = (s2[b];
-a++, b++;
+neow[a] = s2[b];
+a++;
+b++;
 }
 
 return (neow);

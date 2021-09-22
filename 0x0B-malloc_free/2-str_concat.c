@@ -35,6 +35,7 @@ while (a < len1)
 neow[a] = s1[a];
 a++;
 }
+b = 0;
 while (b < len2)
 {
 neow[a] = s2[b];

@@ -43,7 +43,7 @@ a++;
 b = 0;
 while (b <= len2)
 {
-new[a] = s2[b];
+neow[a] = s2[b];
 a++;
 b++;
 }

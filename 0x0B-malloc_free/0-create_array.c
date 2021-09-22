@@ -17,7 +17,7 @@ unsigned int i;
 if (size == 0)
 return (NULL);
 
-cp = malloc(sizeof(c) *size));
+cp = malloc(sizeof(char) *size);
 
 if (cp == 0)
 return (NULL);

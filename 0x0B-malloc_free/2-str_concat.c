@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-
+#include "main.h"
 /**
 * str_concat - concatenates 2 strings and returns a pointer to the result
 * @s1: string to concetenate
@@ -36,7 +36,8 @@ return (NULL);
 a = 0;
 while (a < len1)
 {
-new[a] = s1[a];
+neow[a] = s1[a];
+
 a++;
 }
 b = 0;

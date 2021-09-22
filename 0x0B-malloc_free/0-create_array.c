@@ -17,7 +17,7 @@ unsigned int i;
 if (size == 0)
 return (NULL);
 
-cp = malloc(sizeof(char) *size));
+cp = malloc(sizeof(c) *size));
 
 if (cp == 0)
 return (NULL);
@@ -25,4 +25,5 @@ for (i = 0; i < size; i++)
 {
 cp[i] = c;
 }
+return (cp);
 }

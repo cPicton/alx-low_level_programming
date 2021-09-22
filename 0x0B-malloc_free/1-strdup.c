@@ -12,13 +12,14 @@
 
 char *_strdup(char *str)
 {
-char *neow, *str;
-if (str == NULL)
+char *neow, *stri;
+stri = str;
+if (stri == NULL)
 return (NULL);
-neow = (char *)malloc(sizeof(char) * (strlen(str) + 1));
-str = neow;
-if (str == NULL)
+neow = (char *)malloc(sizeof(char) * (strlen(stri) + 1));
+stri = neow;
+if (stri == NULL)
 return (NULL);
-strcpy(neow, str);
+strcpy(neow, stri);
 return (neow);
 }

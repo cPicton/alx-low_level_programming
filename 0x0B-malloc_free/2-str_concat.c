@@ -1,23 +1,25 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
- * str_concat - concatenates two strings
- * @s1: string 1
- * @s2: string 2
- * Return: pointer to concatenated string
- */
+* str_concat - concatenates 2 strings and returns a pointer to the result
+* @s1: string to concetenate
+* @s2: another one
+*
+* Return: pointer to result string
+*/
 
 char *str_concat(char *s1, char *s2)
 {
-char *neow;
-int len1 = 0, len2 = 0, a, b;
+char *new;
+int len1 = 0, len2 = 0, i, j;
 
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
+
 while (s1[len1] != '\0')
 {
 len1++;
@@ -26,24 +28,24 @@ while (s2[len2] != '\0')
 {
 len2++;
 }
-neow = malloc(sizeof(char) * (len1 + len2));
+len2++;
 
-if (neow == NULL)
+new = malloc((len1 + len2) * sizeof(*s1));
+if (new == NULL)
 return (NULL);
-
-a = 0;
-while (a < len1)
+i = 0;
+while (i < len1)
 {
-neow[a] = s1[a];
-a++;
+new[i] = s1[i];
+i++;
 }
-b = 0;
-while (b <= len2)
+j = 0;
+while (j <= len2)
 {
-neow[a] = s2[b];
-a++;
-b++;
+new[i] = s2[j];
+i++;
+j++;
 }
 
-return (neow);
+return (new);
 }

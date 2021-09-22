@@ -27,7 +27,7 @@ while (s2[len2] != '\0')
 {
 len2++;
 }
-neow = malloc((len1 + len2) *sizeof(*s1));
+neow = malloc(sizeof(char) * (len1 + len2));
 
 if (neow == NULL)
 return (NULL);

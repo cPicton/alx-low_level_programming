@@ -12,8 +12,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-char *new;
-int len1 = 0, len2 = 0, i, j;
+char *neow;
+int len1 = 0, len2 = 0, a, b;
 
 if (s1 == NULL)
 s1 = "";
@@ -30,22 +30,22 @@ len2++;
 }
 len2++;
 
-new = malloc((len1 + len2) * sizeof(*s1));
-if (new == NULL)
+neow = malloc((len1 + len2) *sizeof(*s1));
+if (neow == NULL)
 return (NULL);
-i = 0;
-while (i < len1)
+a = 0;
+while (a < len1)
 {
-new[i] = s1[i];
-i++;
+new[a] = s1[a];
+a++;
 }
-j = 0;
-while (j <= len2)
+b = 0;
+while (b <= len2)
 {
-new[i] = s2[j];
-i++;
-j++;
+new[a] = s2[b];
+a++;
+b++;
 }
 
-return (new);
+return (neow);
 }

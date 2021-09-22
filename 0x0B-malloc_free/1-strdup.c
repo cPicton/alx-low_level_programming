@@ -20,6 +20,6 @@ neow = (char *)malloc(sizeof(char) * (strlen(str) + 1));
 stri = neow;
 if (stri == NULL)
 return (NULL);
-strcpy(neow, stri);
+strcpy(neow, str);
 return (neow);
 }

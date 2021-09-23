@@ -8,7 +8,7 @@
 * @s2 - string
 * @n - bytes to be copied from s2
 *
-* Return - Pointer to the resulting string
+* Return: Pointer to the resulting string
 */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)

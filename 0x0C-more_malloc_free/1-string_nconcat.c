@@ -25,7 +25,7 @@ len1 = strlen(s1);
 len2 = strlen(s2);
 if (n >= len2)
 n = len2;
-new = malloc(sizeof(*neow) * (len1 + n + 1));
+neow = malloc(sizeof(*neow) * (len1 + n + 1));
 if (neow == NULL)
 return (NULL);
 for (a = 0; s1[a] != '\0'; a++)

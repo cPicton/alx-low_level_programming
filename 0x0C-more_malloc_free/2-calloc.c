@@ -3,8 +3,8 @@
 
 /**
 * _calloc - allocates memory for an array and set all values to 0
-* @nmemb - size
-* @size - size of element
+* @nmemb - number of elements
+* @size - size of elements in bytes
 *
 * Return - Pointer to calloc
 */

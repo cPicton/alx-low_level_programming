@@ -31,10 +31,10 @@ return (NULL);
 for (a = 0; s1[a] != '\0'; a++)
 neow[a] = s1[a];
 for (b = 0; b < n && s2[b] != '\0'; b++)
-
+{
 neow[a] = s2[b];
 a++;
-
+}
 neow[a] = '\0';
 return (neow);
 }

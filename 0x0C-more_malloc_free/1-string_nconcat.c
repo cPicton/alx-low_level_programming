@@ -1,12 +1,12 @@
 #include "main.h"
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 
 /**
 * string_nconcat - concatenates s1 to the first n bytes of s2
-* @s1: string to be  received
-* @s2: string
+* @s1: stringto be  received
+* @s2: string 2
 * @n: bytes to be copied from s2
 *
 * Return: pointer to resulting string

@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stddef.h>
+
 
 /**
 * malloc_checked - allocates a memory using malloc.
@@ -10,8 +10,8 @@
 void *malloc_checked(unsigned int b)
 {
 
-void *c;
-c = malloc(b);
+void *c = malloc(b);
+
 if (c == NULL)
 exit(98);
 

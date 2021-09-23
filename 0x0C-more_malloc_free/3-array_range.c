@@ -17,7 +17,7 @@ unsigned int i, size = (max - min + 1);
 
 if (min > max)
 return (NULL);
-cp = malloc(sizeof(int) * size);
+cp = malloc(sizeof(int) *size);
 
 if (cp == NULL)
 return (NULL);
@@ -27,4 +27,3 @@ cp[i] = min++;
 
 return (cp);
 }
-

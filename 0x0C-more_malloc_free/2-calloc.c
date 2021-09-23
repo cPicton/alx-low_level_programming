@@ -27,7 +27,7 @@ if (cp == NULL)
 return (NULL);
 
 abc = cp;
-for (i = 0; i < nmemb * size; i++)
+for (i = 0; (i < nmemb * size); i++)
 abc[i] = '\0';
 
 return (cp);

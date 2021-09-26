@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-* string_nconcat - concatenates s1 to the first n bytes of s2;return ptr to string
+* string_nconcat - concatenates s1 to the first n bytes of s2
 * @s1: stringto be  received
 * @s2: string 2
 * @n: bytes to be copied from s2

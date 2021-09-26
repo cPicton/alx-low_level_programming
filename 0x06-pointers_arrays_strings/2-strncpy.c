@@ -1,12 +1,8 @@
 #include "main.h"
-
 /**
 * _strncpy - Copies a string
-*
 * @dest: Destination to copy to
-*
 * @src: Source to copy from
-*
 * @n: Index checker
 */
 

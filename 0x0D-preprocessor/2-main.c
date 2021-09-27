@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /**
-* main - prints the name of the file compiled from
-* return: 0 always
+* main - prints the name of the file it was compiled from
+* return: void always
 */
 
 int main(void)

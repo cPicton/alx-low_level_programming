@@ -18,8 +18,7 @@ return (-1);
 
 for (i = 0; i < size; i++)
 {
-abc = cmp(array[i]);
-if (abc != 0)
+if (cmp(array[i]) > 0)
 return (i);
 }
 return (-1);

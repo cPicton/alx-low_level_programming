@@ -3,8 +3,7 @@
 * get_op_func - selects correct function to perform.
 * @s: operator used.
 *
-* Return: correct function result or NULL
-* if operator is wring.
+* Return: int
 */
 int (*get_op_func(char *s))(int, int)
 {
@@ -16,7 +15,8 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
-int i = 0;
+int i;
+i = 0;
 
 while (i < 5)
 {

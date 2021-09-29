@@ -6,7 +6,7 @@
 * main - simple operations program
 * @argc: argument counter
 * @argv: argument array
-* Return: 0 mostly
+* Return: 0 always
 */
 
 int main(int argc, char *argv[])

@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
-* array_iterator - executes a function given as a parameter on each element of an array
-* @array: array being passed
-* @size: size of the array
-* @action: pointer to the function needed to be used
-* Return: 0 always
+* array_iterator - executes a function on each array item
+* @array: pointer to array
+* @size: size of array
+* @action: function pointer
+* Return: Void
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {

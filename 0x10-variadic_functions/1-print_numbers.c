@@ -3,8 +3,8 @@
 #include "variadic_functions.h"
 
 /**
-* print_numbers - print varying amount of numbers
-* @separator: delimiter
+* print_numbers - prints numbers,followed by a new line
+* @separator: string to be printed between numbers
 * @n: amount of arguments in list
 */
 

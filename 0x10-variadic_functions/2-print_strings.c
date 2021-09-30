@@ -5,7 +5,7 @@
 /**
 * print_strings - prints a string,followed by a new line
 * @separator - string to be pointed between the strings
-* @n - number of strings to print
+* @n: number of strings to print
 *
 */
 

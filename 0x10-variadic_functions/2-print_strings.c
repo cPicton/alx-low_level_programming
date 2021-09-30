@@ -6,6 +6,7 @@
 * print_strings - prints a string,followed by a new line
 * @separator - string to be pointed between the strings
 * @n - number of arguments passed
+* @str - string
 */
 
 void print_strings(const char *separator, const unsigned int n, ...)

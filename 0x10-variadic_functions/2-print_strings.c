@@ -8,7 +8,7 @@
 * @n - number of strings passed to the function
 */
 
-void print_strings(const char *separator, const unsigned int n,...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list arg;
 unsigned int i;

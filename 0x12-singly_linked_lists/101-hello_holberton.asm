@@ -1,10 +1,11 @@
-global _start
-section .text
-_start: mov rax, 1
-	mov rdi, 1
-	mov rsi, message
-	mov rdx, 14
-	syscall
+global  _main
+    extern  _printf
 
-	section .rodata
-msg: db "Hello, Holberton", 10
+    section .text
+_main:
+    push    message
+    call    _printf
+    add     esp, 4
+    ret
+message:
+    db  'Hello, Holberton', 10, 0

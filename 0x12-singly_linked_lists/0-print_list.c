@@ -5,37 +5,26 @@
 
 /**
 * size_t print_list - prints all elements of a list
-* struct list_s - singly linked list
-* @str: string - (malloc'ed string)
-* @len: length of the string
-* @next: points to the next node
+* @h: linked list
 * Return: number of nodes
 */
-
-typedef struct list_s
-{
-char *str;
-unsigned int len;
-struct list_s *next;
-} list_t;
-
 size_t print_list(const list_t *h)
-node *tmp = h;
+
 {
-if (str == NULL)
+if (h->str == NULL)
 {
-printf("%s", [0] (nil));
+printf("[0] (nil\n"));
 }
-while(tmp != NULL)
+while(h != NULL)
 {
-if (tmp->next == NULL)
+if (h->str == NULL)
 {
-printf("%d", tmp->len);
+printf("%d", h-->len);
 }
 else
 {
-printf("%d, ", tmp->len);
+printf("%d, ", h->len, h->tr);
 }
-tmp = tmp->next;
+h = h->next;
 }
 }

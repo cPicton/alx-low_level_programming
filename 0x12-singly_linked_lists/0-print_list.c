@@ -8,14 +8,18 @@
 
 size_t print_list(const list_t *h)
 {
-const list_t *cp;
-unsigned int i;
+size_t elcount = 0;
 
-cp = h;
-for (i = 0; cp; i++)
+while (h != NULL)
 {
-printf("[%u] %s\n", cp->len, cp->str);
-cp = cp->next;
+if (h->str == NULL)
+printf("[0] (nil)\n");
+else
+printf("[%d] %s\n", h->len, h->str);
+
+elcount++;
+h = h->next;
 }
-return (i);
+
+return (elcount);
 }

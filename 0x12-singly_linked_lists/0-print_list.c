@@ -6,7 +6,6 @@
 /**
 * print_list - prints all elements of a list
 * @h: linked list
-* @str: node of data
 * Return: number of nodes
 */
 size_t print_list(const list_t *h)

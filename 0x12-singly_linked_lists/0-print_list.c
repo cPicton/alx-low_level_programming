@@ -4,27 +4,24 @@
 #include <string.h>
 
 /**
-* size_t print_list - prints all elements of a list
+* print_list - prints all elements of a list
 * @h: linked list
 * Return: number of nodes
 */
 size_t print_list(const list_t *h)
 
 {
-if (h->str == NULL)
-{
-printf("[0] (nil\n"));
-}
-while(h != NULL)
+size_t elcount = 0;
+
+while (h != NULL)
 {
 if (h->str == NULL)
-{
-printf("%d", h-->len);
-}
+printf("[0] (nil)\n");
 else
-{
-printf("%d, ", h->len, h->tr);
-}
+printf("[%d] %s\n", h->len, h->str);
+elcount++;
+
 h = h->next;
 }
+return (elcount);
 }

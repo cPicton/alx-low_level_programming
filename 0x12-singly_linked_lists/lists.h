@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include <string.h>
 
+int_putchar(char c);
+
 /**
 * struct list_s - singly linked list
 * @str: string - (malloc'ed string)

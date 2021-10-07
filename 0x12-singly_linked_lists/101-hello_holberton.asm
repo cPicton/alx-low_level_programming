@@ -9,4 +9,4 @@ main:	mov rax,1
 	xor rdi,rdi
 	syscall
 	section .data
-message:	db "Hello, Holberton", 10
+message:	db "Hello, Holberton", 10, 0

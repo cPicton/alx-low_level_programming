@@ -11,6 +11,6 @@ int i = 1;
 if (*(char *)&i == 1)
 return (1);
 
-else 
+else
 return (0);
-} 
+}

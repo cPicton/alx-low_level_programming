@@ -1,6 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/*
+* File: main.h
+* Author: Chris Picton
+*/
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
